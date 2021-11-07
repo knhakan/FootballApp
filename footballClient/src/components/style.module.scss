@@ -1,0 +1,52 @@
+.select {
+    max-width: 300px;
+    margin: 0 auto {
+        top: 50px;
+    };
+}
+.team_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        span {
+            font-weight: 600;
+        }
+    }
+}
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.matches {
+    margin-top: 30px;
+    table {
+        tr {
+            th, td {
+                text-align: center;
+            }
+            th:first-of-type, td:first-of-type {
+                text-align: left;
+            }
+            td {
+                p.enemyTeamName {
+                    display: inline-block;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+    
+}
